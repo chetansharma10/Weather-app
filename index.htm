@@ -1,0 +1,129 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLqDOflVT6Ru_Tt30fRyIdmvFzLe8xQN4&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index2.css">
+    <link rel="stylesheet" href="index3.css">
+
+</head>
+<body>
+  
+  
+     <div class="parent">
+         <div class="nav">
+            <i  style="color:white;" class="fa fa-sun" aria-hidden="true"></i>&nbsp;
+            <input type="text" id="txt" placeholder="Search by City name">
+            <button id="search"><i class="fa fa-search" aria-hidden="true"></i></button>
+            <button id="location"><i class="fa fa-location-arrow" aria-hidden="true"></i></button>
+          
+         </div>
+         <div class="first">
+             <div class="place">
+                 <h1 id="place">Place</h1>
+             </div>
+             <div class="temperature">
+                 <h1 id="one"><img id="img1" src="http://openweathermap.org/img/wn/10d@2x.png"/></h1> 
+                 <h1 id="two">26<sup>o</sup></h1>
+                 <h3 id="three">C</h3>
+                 
+             </div>
+             <div class="weather">
+                 <h3 id="weatherone">Rain</h3>
+                 <h4 id="weathertwo"></h4>
+
+             </div>
+             <div class="time">
+                <h5 id="timeone">Updated as of 11:23AM</h5>
+
+             </div>
+             <div class="extraDetails">
+                 <h5 id="extraone"> <i class="fas fa-temperature-high "></i>Feels like 35<sup>o</sup></h5>
+                 <h5 id="extratwo">  <i class="fas fa-wind    "></i>              Wind 42KM/H</h5>
+                 <h5 id="extrathree">  <i class="fa fa-bars" aria-hidden="true"></i>      Visibility 4KM</h5>
+             </div>
+
+
+         </div>
+         <div class="second">
+             <div class="pressure">
+                 <i class="fas fa-compress    "></i>
+                 <strong id="pressure">101</strong>
+                 <small><small >Pressure</small></small>
+                 
+             </div>
+
+             <div class="humidity">
+                 <i class="fa fa-cloud" aria-hidden="true"></i>
+                 <strong id="humidity">101</strong>
+                 <small><small >Humidity</small></small>
+             </div>
+
+             <div class="ground">
+                <i class="fa fa-road" aria-hidden="true"></i>
+                <strong id="ground">101</strong>
+                <small><small >Ground level</small></small>
+             </div>
+
+             <div class="sea">
+                 <i class="fas fa-water    "></i>
+                 <strong id="sea">101</strong>
+                 <small><small >Sea level</small></small>
+             </div>
+
+         </div>
+
+
+
+            <div class="third">        
+            
+                            <div class="me">
+                                <h5 style="font-weight: bolder;color:white;background-color: rgb(35, 48, 59);padding:10px">About Developer</h5>
+                                <br>
+                                <img style="border: 5px solid rgb(255, 255, 255);border-radius:100px" width="60px" height="60px"  src="https://lh3.googleusercontent.com/ogw/ADGmqu9SwIftfAU-sYdJwltAHabTWZ00IPK32kpx117a=s83-c-mo"/>
+                                <br>
+                                <ul style="list-style: none;display:flex;justify-content:space-arround;flex-direction:row;padding:10px;background-color:rgb(247, 244, 239)">
+                                    <li><img width="20px" height="20px" src="/images/facebook.png"/></li>
+                                    &nbsp;
+                                    &nbsp;
+                                    <li><img width="20px" height="20px"src="/images/instagram.png"/></li>
+                                    &nbsp;
+                                    &nbsp;
+                                    
+                                    <li><img width="20px" height="20px"src="/images/youtube.png"/></li>
+                                    &nbsp;
+                                    &nbsp;
+                                    
+                                    <li><img width="20px" height="20px"src="/images/github.png"/></li>
+
+
+                                </ul>
+                            </div>
+                            
+
+                    
+                
+                <div id="map"></div>
+            </div>
+        
+     </div>
+    
+
+    <script src="index.js"></script>
+    <script src="map.js"></script>
+
+</body>
+</html>

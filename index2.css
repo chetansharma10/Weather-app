@@ -1,0 +1,20 @@
+.second{
+
+    width: 100%;
+    opacity: 0;
+    height: 20%;
+    background-color: rgba(255, 198, 92, 0.849);
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color:rgb(34, 34, 34);
+   
+}
+.pressure,.humidity,.sea,.ground{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+   align-items: center;
+}

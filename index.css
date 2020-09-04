@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin:0;
+}
+.parent{
+
+    width: 100%;
+    flex-wrap: nowrap;
+    display:flex;
+    background-color:  rgb(35, 48, 59);
+    flex-direction: column;
+    height: 100%;
+}
+.first{
+    display: none;
+    opacity: 0;
+    color:rgba(255, 255, 255, 0.801);
+    width: 100%;
+    height: 50%;
+    flex-direction:column;
+    align-items: center;
+    background: url('/images/2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+ 
+    justify-content: center;
+}
+.first .place{
+    font-family: 'Jockey One', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    color:rgba(255, 198, 92, 0.959);
+}
+.temperature{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+#one{
+    margin-right: 10px;
+}
+#two{
+    margin-right: 10px;
+}
+#three{
+    font-size: 30px;
+}
+
+.weather{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#weatherone{
+    margin-right: 10px;
+}
+#weathertwo{
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: rgba(255, 198, 92, 0.959);
+    font-family: 'Noto Sans', sans-serif;
+}
+#weatherone,#weathertwo{
+    
+  
+font-family: 'Roboto', sans-serif;
+}
+
+
+#timeone{
+    margin-top: 5px;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.extraDetails{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#extraone,#extratwo{
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+#extrathree{
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 10px;
+}
+
+.extraDetails i{
+    color:rgba(255, 198, 92, 0.959);
+}
+
+#three
+{
+    color:rgba(255, 198, 92, 0.959);
+}
+
+
+
+.nav{
+    width: 100%;
+    height: 100%;
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgb(35, 48, 59);
+}
+#txt{
+    background-color: rgb(51, 65, 78) ;
+    border: 0px transparent;
+    padding: 10px;
+    height: 30px;
+   
+    color:white;
+    transition: 1s ease;
+  
+    
+}
+
+#search{
+    height: 30px;
+    background-color: rgb(48, 64, 78) ;
+    color:white;
+    border: 0px transparent;
+
+    width: 30px;
+    margin-right: 1%;
+
+}
+#location{
+    height: 30px;
+    background-color: rgb(48, 64, 78) ;
+    color:white;
+    border: 0px transparent;
+    width: 30px;
+}
+
